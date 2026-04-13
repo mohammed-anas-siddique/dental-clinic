@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1776046889247,
+    "name": "AutoTest",
+    "email": "test@example.com",
+    "phone": "999",
+    "date": "2026-04-13",
+    "time": "11:00",
+    "message": "local save test",
+    "receivedAt": "2026-04-13T02:21:29.247Z"
+  }
+]
