@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bright Smile Dental Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">Bright Smile</div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="#appointment">Book Appointment</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Bright Smile Dental Clinic</h1>
+            <p class="tagline">Gentle care. Healthy smiles. Modern dentistry.</p>
+            <a class="btn primary" href="#appointment">Book Appointment</a>
+          </div>
+          <div class="hero-image" aria-hidden="true">
+            <!-- Simple SVG illustration placeholder -->
+            <svg width="260" height="160" viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0" y="0" width="260" height="160" rx="12" fill="#f0fbff"></rect>
+              <circle cx="60" cy="60" r="36" fill="#e6f8ff"></circle>
+              <rect x="110" y="30" width="110" height="100" rx="8" fill="#eaf6ff"></rect>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about container">
+        <h2>About Us</h2>
+        <p>
+          Bright Smile Dental Clinic provides compassionate, state-of-the-art dental care for
+          the whole family. Our team emphasizes prevention, comfort, and long-term oral health.
+        </p>
+      </section>
+
+      <section id="services" class="services section container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Cleaning</h3>
+            <p>Routine hygiene, polishing and prevention.</p>
+          </div>
+          <div class="service-card">
+            <h3>Root Canal</h3>
+            <p>Advanced endodontic treatments to save teeth.</p>
+          </div>
+          <div class="service-card">
+            <h3>Whitening</h3>
+            <p>Safe professional whitening for brighter smiles.</p>
+          </div>
+          <div class="service-card">
+            <h3>Braces</h3>
+            <p>Orthodontic options for all ages including clear aligners.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="testimonials" class="section container">
+          <h2>Testimonials</h2>
+          <div class="testimonials-grid">
+              <blockquote>
+                  "Friendly staff and very gentle care — highly recommend!"
+                  <cite>— Sarah P.</cite>
+                </blockquote>
+                <blockquote>
+                    "Clean office and professional service."
+                    <cite>— Mark R.</cite>
+                </blockquote>
+            </div>
+        </section>
+        
+        <section id="appointment" class="section appointment container">
+          <h2>Book an Appointment</h2>
+          <form id="appointment-form" novalidate>
+            <div class="form-grid">
+              <input type="text" id="name" name="name" placeholder="Full Name" required />
+              <input type="email" id="email" name="email" placeholder="Email" required />
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
+              <label class="sr-only" for="date">Appointment date</label>
+              <input type="date" id="date" name="date" required />
+              <label class="sr-only" for="time">Appointment time</label>
+              <input type="time" id="time" name="time" required />
+            </div>
+            <textarea id="message" name="message" placeholder="Message (optional)" rows="4"></textarea>
+            <div class="form-actions">
+              <button id="submit-btn" class="btn primary" type="submit">Request Appointment</button>
+              <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+            </div>
+          </form>
+        </section>
+      <section id="contact" class="section contact container">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hello@brightsmile.example">hello@brightsmile.example</a></p>
+          <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+          <p>Address: 123 Dental Ave, Smile City</p>
+        </div>
+        <div class="map">
+          <iframe title="Clinic location" src="https://www.google.com/maps?q=123+Dental+Ave+Smile+City&output=embed" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>&copy; 2026 Bright Smile Dental Clinic</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
