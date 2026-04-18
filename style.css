@@ -997,6 +997,51 @@ main {
   opacity: 1;
   transform: translateY(0);
 }
+       .whatsapp {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            /* Replace ONLY this line inside .whatsapp */
+
+background: #25D366;
+            box-shadow:
+                0 0 0 0 rgba(37, 211, 102, 0.55),
+                0 14px 34px rgba(37, 211, 102, 0.24);
+            animation: pulse 1.9s infinite;
+            z-index: 999;
+        }
+
+        .whatsapp img {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.45),
+                    0 14px 34px rgba(37, 211, 102, 0.24);
+            }
+
+            70% {
+                box-shadow:
+                    0 0 0 16px rgba(37, 211, 102, 0),
+                    0 18px 40px rgba(37, 211, 102, 0.2);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0),
+                    0 14px 34px rgba(37, 211, 102, 0.24);
+            }
+        }
 
 @media (min-width: 640px) {
   .container {
