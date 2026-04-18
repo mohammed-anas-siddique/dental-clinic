@@ -1,124 +1,600 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bright Smile Dental Clinic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia Dental | Premium Dental Clinic</title>
+    <meta
+      name="description"
+      content="Aurelia Dental offers premium dental care with modern technology, experienced doctors, and a calming patient-first experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo">Bright Smile</div>
-        <nav class="nav">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-          <a class="btn" href="#appointment">Book Appointment</a>
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Aurelia Dental home">
+          <span class="brand-mark">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <defs>
+                <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#16b9aa" />
+                  <stop offset="100%" stop-color="#0b5b94" />
+                </linearGradient>
+              </defs>
+              <path
+                fill="url(#brandGradient)"
+                d="M24 4c7.2 0 13 5.8 13 13 0 2.8-.9 5.4-2.3 7.6-1.3 2.1-2.1 4.4-2.5 6.8L30 42.2c-.2 1-.9 1.8-1.8 1.8h-8.4c-.9 0-1.6-.8-1.8-1.8l-2.2-10.8c-.4-2.4-1.2-4.7-2.5-6.8C11.9 22.4 11 19.8 11 17c0-7.2 5.8-13 13-13Z"
+              />
+              <path
+                fill="#ffffff"
+                d="M24 12.5c4 0 7.2 3.2 7.2 7.2 0 4.4-3.6 8.4-7.2 11.8-3.6-3.4-7.2-7.4-7.2-11.8 0-4 3.2-7.2 7.2-7.2Zm0 3.1a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2Z"
+              />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>Aurelia Dental</strong>
+            <small>Precision care. Luxury comfort.</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#doctors">Doctors</a>
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-text">
-            <h1>Bright Smile Dental Clinic</h1>
-            <p class="tagline">Gentle care. Healthy smiles. Modern dentistry.</p>
-            <a class="btn primary" href="#appointment">Book Appointment</a>
-          </div>
-          <div class="hero-image" aria-hidden="true">
-            <!-- Simple SVG illustration placeholder -->
-            <svg width="260" height="160" viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0" y="0" width="260" height="160" rx="12" fill="#f0fbff"></rect>
-              <circle cx="60" cy="60" r="36" fill="#e6f8ff"></circle>
-              <rect x="110" y="30" width="110" height="100" rx="8" fill="#eaf6ff"></rect>
-            </svg>
-          </div>
-        </div>
-      </section>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-animate>
+            <span class="eyebrow">Trusted by families across Kolkata</span>
+            <h1>Your Smile, Our Priority</h1>
+            <p class="hero-text">
+              Modern dentistry, transparent guidance, and a calming clinic experience
+              that helps you feel confident from consultation to aftercare.
+            </p>
 
-      <section id="about" class="section about container">
-        <h2>About Us</h2>
-        <p>
-          Bright Smile Dental Clinic provides compassionate, state-of-the-art dental care for
-          the whole family. Our team emphasizes prevention, comfort, and long-term oral health.
-        </p>
-      </section>
-
-      <section id="services" class="services section container">
-        <h2>Services</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3>Cleaning</h3>
-            <p>Routine hygiene, polishing and prevention.</p>
-          </div>
-          <div class="service-card">
-            <h3>Root Canal</h3>
-            <p>Advanced endodontic treatments to save teeth.</p>
-          </div>
-          <div class="service-card">
-            <h3>Whitening</h3>
-            <p>Safe professional whitening for brighter smiles.</p>
-          </div>
-          <div class="service-card">
-            <h3>Braces</h3>
-            <p>Orthodontic options for all ages including clear aligners.</p>
-          </div>
-        </div>
-      </section>
-
-      
-      <section id="testimonials" class="section container">
-          <h2>Testimonials</h2>
-          <div class="testimonials-grid">
-              <blockquote>
-                  "Friendly staff and very gentle care — highly recommend!"
-                  <cite>— Sarah P.</cite>
-                </blockquote>
-                <blockquote>
-                    "Clean office and professional service."
-                    <cite>— Mark R.</cite>
-                </blockquote>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#appointment">Book Appointment</a>
+              <a class="btn btn-secondary" href="tel:+919876543210">Call Now</a>
             </div>
-        </section>
-        
-        <section id="appointment" class="section appointment container">
-          <h2>Book an Appointment</h2>
-          <form id="appointment-form" novalidate>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <strong>15+</strong>
+                <span>Years of clinical experience</span>
+              </article>
+              <article class="metric-card">
+                <strong>4.9/5</strong>
+                <span>Patient satisfaction score</span>
+              </article>
+              <article class="metric-card">
+                <strong>5000+</strong>
+                <span>Smiles restored with care</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-panel glass-card" data-animate style="--delay: 0.12s">
+            <span class="panel-label">Premium smile studio</span>
+            <h2>Comfort-led care with advanced treatment planning</h2>
+            <p>
+              Digital imaging, pain-conscious procedures, and a team that explains every
+              step before treatment begins.
+            </p>
+
+            <div class="panel-grid">
+              <article class="panel-card">
+                <strong>Same-day consults</strong>
+                <span>Fast support for urgent discomfort and routine checkups.</span>
+              </article>
+              <article class="panel-card">
+                <strong>High-sterilization protocol</strong>
+                <span>Meticulous hygiene standards in every treatment room.</span>
+              </article>
+              <article class="panel-card">
+                <strong>Smile planning</strong>
+                <span>Tailored cosmetic and restorative roadmaps that feel clear.</span>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="section-tag">About Us</span>
+            <h2>Designed to feel reassuring, delivered with clinical precision.</h2>
+            <p>
+              Aurelia Dental combines modern diagnostics, experienced specialists, and a
+              patient-first environment so every visit feels calm, transparent, and
+              worthwhile.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-card feature-card" data-animate>
+              <div class="experience-chip">
+                <strong>15+</strong>
+                <span>Years building trusted family dentistry</span>
+              </div>
+              <p>
+                From preventive cleanings to full smile rehabilitation, our clinic is
+                built around long-term oral health, comfort, and natural-looking results.
+              </p>
+              <p>
+                We focus on patient education and thoughtful treatment planning, so you
+                always know what is being recommended and why.
+              </p>
+            </article>
+
+            <div class="trust-grid">
+              <article class="trust-card feature-card" data-animate style="--delay: 0.08s">
+                <span class="trust-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2 4 5v6c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11V5l-8-3Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="m9.2 11.8 1.8 1.8 3.8-4.1"
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </span>
+                <h3>Trusted Expertise</h3>
+                <p>Specialist-led treatment with careful diagnosis and clear guidance.</p>
+              </article>
+
+              <article class="trust-card feature-card" data-animate style="--delay: 0.16s">
+                <span class="trust-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8v6.5a1.5 1.5 0 0 1-3 0V12a5 5 0 1 0-10 0v6.5a1.5 1.5 0 0 1-3 0V12Z"
+                      fill="currentColor"
+                    />
+                    <circle cx="12" cy="10" r="2.1" fill="#ffffff" />
+                  </svg>
+                </span>
+                <h3>Comfort-Focused Visits</h3>
+                <p>Relaxed consultation flow, gentle care, and a hospitality-led experience.</p>
+              </article>
+
+              <article class="trust-card feature-card" data-animate style="--delay: 0.24s">
+                <span class="trust-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 3 5 7v5c0 4.6 2.8 8.8 7 10 4.2-1.2 7-5.4 7-10V7l-7-4Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M12 7.2v9.6M7.2 12h9.6"
+                      stroke="#ffffff"
+                      stroke-linecap="round"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </span>
+                <h3>Modern Technology</h3>
+                <p>Digital workflows, safer diagnostics, and treatment plans built for precision.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="section-tag">Services</span>
+            <h2>Comprehensive dental care for confident everyday smiles.</h2>
+            <p>
+              Every service is delivered with attention to aesthetics, durability, and the
+              comfort you expect from a premium clinic.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card feature-card" data-animate>
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7 5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v2c0 1.7-1 3.2-2.5 3.9L14 21h-4l-.5-10.1A4.3 4.3 0 0 1 7 7V5Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <h3>Cleaning</h3>
+              <p>
+                Preventive hygiene sessions that remove buildup, polish enamel, and help
+                keep your smile fresh and healthy.
+              </p>
+            </article>
+
+            <article class="service-card feature-card" data-animate style="--delay: 0.08s">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3c4.6 0 8.3 3.7 8.3 8.3S16.6 21 12 21 3.7 17.3 3.7 12.7C3.7 8 7.4 3 12 3Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M9 12.4 11 14l4.2-5"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <h3>Whitening</h3>
+              <p>
+                Professional whitening treatments designed to lift stains evenly and reveal
+                a brighter, natural-looking smile.
+              </p>
+            </article>
+
+            <article class="service-card feature-card" data-animate style="--delay: 0.16s">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M6 6h12v2.2L15 12l3 3.8V18H6v-2.2L9 12 6 8.2V6Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <h3>Braces</h3>
+              <p>
+                Structured orthodontic care that aligns your bite and improves smile harmony
+                with precision planning.
+              </p>
+            </article>
+
+            <article class="service-card feature-card" data-animate style="--delay: 0.24s">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 2c3.3 0 6 2.7 6 6 0 1.7-.7 3.3-1.9 4.4L14 14.6V20a2 2 0 0 1-4 0v-5.4l-2.1-2.2A6 6 0 0 1 6 8c0-3.3 2.7-6 6-6Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <h3>Root Canal</h3>
+              <p>
+                Tooth-saving endodontic treatment that relieves discomfort and restores
+                strength with careful technique.
+              </p>
+            </article>
+
+            <article class="service-card feature-card" data-animate style="--delay: 0.32s">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M10 3h4v5h2.4a2 2 0 0 1 1.8 1.2l1.6 3.8a4 4 0 0 1-3.7 5.5H8a4 4 0 0 1-3.7-5.5L5.9 9.2A2 2 0 0 1 7.7 8H10V3Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M9.5 18.5 8 21h8l-1.5-2.5"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <h3>Implants</h3>
+              <p>
+                Precision implant dentistry crafted to restore confidence, chewing comfort,
+                and long-term function.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section doctors" id="doctors">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="section-tag">Doctors</span>
+            <h2>Specialist care from a team that values both detail and empathy.</h2>
+            <p>
+              Meet the clinicians behind our patient-first approach to cosmetic,
+              restorative, and preventive dentistry.
+            </p>
+          </div>
+
+          <div class="doctor-grid">
+            <article class="doctor-card feature-card" data-animate>
+              <div class="doctor-portrait portrait-one" data-initials="AM" role="img" aria-label="Dr. Aanya Mehta portrait placeholder"></div>
+              <div class="doctor-content">
+                <h3>Dr. Aanya Mehta</h3>
+                <p>Cosmetic Dentist</p>
+              </div>
+            </article>
+
+            <article class="doctor-card feature-card" data-animate style="--delay: 0.08s">
+              <div class="doctor-portrait portrait-two" data-initials="RS" role="img" aria-label="Dr. Rohan Sen portrait placeholder"></div>
+              <div class="doctor-content">
+                <h3>Dr. Rohan Sen</h3>
+                <p>Orthodontist</p>
+              </div>
+            </article>
+
+            <article class="doctor-card feature-card" data-animate style="--delay: 0.16s">
+              <div class="doctor-portrait portrait-three" data-initials="IK" role="img" aria-label="Dr. Isha Kapoor portrait placeholder"></div>
+              <div class="doctor-content">
+                <h3>Dr. Isha Kapoor</h3>
+                <p>Endodontist</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonials">
+        <div class="container testimonials-wrap">
+          <div class="section-heading light" data-animate>
+            <span class="section-tag">Testimonials</span>
+            <h2>Patients trust the experience as much as the results.</h2>
+            <p>
+              Real feedback from patients who wanted quality treatment, clear communication,
+              and lasting confidence.
+            </p>
+          </div>
+
+          <div
+            class="testimonial-slider"
+            data-animate
+            style="--delay: 0.08s"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Patient testimonials"
+          >
+            <button class="slider-button prev" type="button" data-slider-prev aria-label="Previous testimonial">
+              <span>&larr;</span>
+            </button>
+
+            <div class="testimonial-viewport">
+              <div class="testimonial-track" data-slider-track>
+                <article class="testimonial-card">
+                  <div class="quote-mark">“</div>
+                  <p>
+                    The clinic feels premium the moment you walk in. The team explained my
+                    treatment with patience, and the whitening results looked natural and
+                    elegant.
+                  </p>
+                  <h3>Neha Sharma</h3>
+                  <span>Cosmetic Dentistry Patient</span>
+                </article>
+
+                <article class="testimonial-card">
+                  <div class="quote-mark">“</div>
+                  <p>
+                    I usually get anxious at dental visits, but the doctors here were calm,
+                    gentle, and incredibly clear. My root canal was smoother than I ever
+                    expected.
+                  </p>
+                  <h3>Arjun Mitra</h3>
+                  <span>Restorative Care Patient</span>
+                </article>
+
+                <article class="testimonial-card">
+                  <div class="quote-mark">“</div>
+                  <p>
+                    From booking to aftercare, everything felt organised and thoughtful. The
+                    braces plan was explained beautifully, and the clinic standards are top
+                    notch.
+                  </p>
+                  <h3>Priya Dutta</h3>
+                  <span>Orthodontic Patient</span>
+                </article>
+              </div>
+            </div>
+
+            <button class="slider-button next" type="button" data-slider-next aria-label="Next testimonial">
+              <span>&rarr;</span>
+            </button>
+
+            <div class="slider-dots" data-slider-dots aria-label="Testimonial navigation"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section appointment" id="appointment">
+        <div class="container appointment-grid">
+          <div class="appointment-copy" data-animate>
+            <span class="section-tag">Appointment</span>
+            <h2>Book a visit that fits your schedule.</h2>
+            <p>
+              Whether you need a routine checkup or a detailed treatment consultation, our
+              team will help you choose the right next step quickly.
+            </p>
+
+            <div class="appointment-highlights">
+              <article class="highlight-card">
+                <strong>Consultation-first approach</strong>
+                <span>Clear explanations before any treatment begins.</span>
+              </article>
+              <article class="highlight-card">
+                <strong>Flexible appointment windows</strong>
+                <span>Morning, evening, and priority slots available.</span>
+              </article>
+            </div>
+          </div>
+
+          <form class="appointment-form feature-card" id="appointment-form" novalidate data-animate style="--delay: 0.08s">
             <div class="form-grid">
-              <input type="text" id="name" name="name" placeholder="Full Name" required />
-              <input type="email" id="email" name="email" placeholder="Email" required />
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required />
-              <label class="sr-only" for="date">Appointment date</label>
-              <input type="date" id="date" name="date" required />
-              <label class="sr-only" for="time">Appointment time</label>
-              <input type="time" id="time" name="time" required />
+              <label class="field">
+                <span>Name</span>
+                <input id="name" name="name" type="text" placeholder="Your full name" />
+                <small class="field-error" aria-hidden="true"></small>
+              </label>
+
+              <label class="field">
+                <span>Phone</span>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="numeric"
+                  maxlength="10"
+                  placeholder="10-digit mobile number"
+                />
+                <small class="field-error" aria-hidden="true"></small>
+              </label>
+
+              <label class="field">
+                <span>Date</span>
+                <input id="date" name="date" type="date" />
+                <small class="field-error" aria-hidden="true"></small>
+              </label>
+
+              <label class="field">
+                <span>Service</span>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="Cleaning">Cleaning</option>
+                  <option value="Whitening">Whitening</option>
+                  <option value="Braces">Braces</option>
+                  <option value="Root Canal">Root Canal</option>
+                  <option value="Implants">Implants</option>
+                </select>
+                <small class="field-error" aria-hidden="true"></small>
+              </label>
             </div>
-            <textarea id="message" name="message" placeholder="Message (optional)" rows="4"></textarea>
-            <div class="form-actions">
-              <button id="submit-btn" class="btn primary" type="submit">Request Appointment</button>
-              <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
-            </div>
+
+            <button class="btn btn-primary form-submit" type="submit">Submit</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
           </form>
-        </section>
-      <section id="contact" class="section contact container">
-        <div class="contact-info">
-          <h2>Contact</h2>
-          <p>Email: <a href="mailto:hello@brightsmile.example">hello@brightsmile.example</a></p>
-          <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
-          <p>Address: 123 Dental Ave, Smile City</p>
         </div>
-        <div class="map">
-          <iframe title="Clinic location" src="https://www.google.com/maps?q=123+Dental+Ave+Smile+City&output=embed" allowfullscreen loading="lazy"></iframe>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-heading" data-animate>
+            <span class="section-tag">Contact</span>
+            <h2>Visit our clinic or speak to the team directly.</h2>
+            <p>
+              We are here to answer questions, guide treatment decisions, and help you book
+              the right appointment with confidence.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card feature-card" data-animate>
+              <h3>Address</h3>
+              <p>22 Park Street, 3rd Floor, Kolkata, West Bengal 700016</p>
+            </article>
+
+            <article class="contact-card feature-card" data-animate style="--delay: 0.08s">
+              <h3>Phone</h3>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+            </article>
+
+            <article class="contact-card feature-card" data-animate style="--delay: 0.16s">
+              <h3>Email</h3>
+              <p><a href="mailto:care@aureliadental.in">care@aureliadental.in</a></p>
+            </article>
+
+            <article class="map-card feature-card" data-animate style="--delay: 0.24s">
+              <div class="map-placeholder" aria-label="Map placeholder showing clinic location">
+                <span class="map-pin"></span>
+                <div class="map-content">
+                  <strong>Map Placeholder</strong>
+                  <span>Park Street, Kolkata</span>
+                  <a
+                    class="map-link"
+                    href="https://maps.google.com/?q=22+Park+Street+Kolkata"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open in Maps
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer container">
-      <p>&copy; 2026 Bright Smile Dental Clinic</p>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand footer-brand-link" href="#home">Aurelia Dental</a>
+          <p>
+            Premium dental care with a calm environment, specialist expertise, and
+            results-focused treatment planning.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#doctors">Doctors</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <h3>Social</h3>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M13.5 21v-7.2h2.5l.4-3h-2.9V8.9c0-.9.3-1.5 1.5-1.5H16V4.7c-.6-.1-1.4-.2-2.4-.2-2.4 0-4 1.5-4 4.2v2.1H7.2v3h2.4V21h3.9Z" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.8 8.6a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6ZM5 10.3h3.5V20H5v-9.7Zm5.6 0H14v1.4h.1c.5-.9 1.7-1.8 3.4-1.8 3 0 3.5 2 3.5 4.6V20h-3.5v-4.8c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20h-3.5v-9.7Z" fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; 2026 Aurelia Dental. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
